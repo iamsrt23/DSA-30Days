@@ -3,6 +3,7 @@ def is_valid_palindrome(s):
     right = len(s)-1
 
     while left <=right:
+        # skip non-alphanumeric numbers
         if not s[left].isalnum():
             left +=1
         elif not s[right].isalnum():
